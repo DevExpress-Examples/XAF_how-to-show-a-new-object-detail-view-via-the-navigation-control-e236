@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Application Title="HowToCreateNewObjectViaNavigationControl" Logo="ExpressAppLogo">
+  <NavigationItems IsNewNode="True">
+    <Group ID="Default" IsNewNode="True">
+      <Item ID="Task" ViewID="Task_ListView" IsNewNode="True" />
+    </Group>
+  </NavigationItems>
+</Application>
