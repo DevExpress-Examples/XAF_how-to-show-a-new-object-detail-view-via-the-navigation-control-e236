@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="NewObjectFromNavigationExample" Logo="ExpressAppLogo">
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="NewIssue" ViewId="Issue_DetailView" ObjectKey="" Caption="Create New Issue..." ImageName="Action_New" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="13.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>
