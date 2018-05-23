@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<Tests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Date="7/11/2012">
+  <Test Name="Test1" ApplicationName="ShowNewObjectExample.Web" Result="Passed" Elapsed="00:00:18.0178016" Started="13:10:39.6815973" MachineName="SAMMAL-SV" IP="172.22.0.156" />
+</Tests>
