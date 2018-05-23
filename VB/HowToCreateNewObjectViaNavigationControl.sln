@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToCreateNewObjectViaNavigationControl.Module", "HowToCreateNewObjectViaNavigationControl.Module\HowToCreateNewObjectViaNavigationControl.Module.vbproj", "{7CCF4AFD-C105-4AF2-BA98-2954B4CC7EB6}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToCreateNewObjectViaNavigationControl.Module.Win", "HowToCreateNewObjectViaNavigationControl.Module.Win\HowToCreateNewObjectViaNavigationControl.Module.Win.vbproj", "{4FFB0E1C-E34A-4217-BFF5-B004D62D3ABA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToCreateNewObjectViaNavigationControl.Win", "HowToCreateNewObjectViaNavigationControl.Win\HowToCreateNewObjectViaNavigationControl.Win.vbproj", "{E535D367-3C22-4D5D-B5DC-C1F8760C9C90}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CCF4AFD-C105-4AF2-BA98-2954B4CC7EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CCF4AFD-C105-4AF2-BA98-2954B4CC7EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CCF4AFD-C105-4AF2-BA98-2954B4CC7EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CCF4AFD-C105-4AF2-BA98-2954B4CC7EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FFB0E1C-E34A-4217-BFF5-B004D62D3ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FFB0E1C-E34A-4217-BFF5-B004D62D3ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FFB0E1C-E34A-4217-BFF5-B004D62D3ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FFB0E1C-E34A-4217-BFF5-B004D62D3ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E535D367-3C22-4D5D-B5DC-C1F8760C9C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E535D367-3C22-4D5D-B5DC-C1F8760C9C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E535D367-3C22-4D5D-B5DC-C1F8760C9C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E535D367-3C22-4D5D-B5DC-C1F8760C9C90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

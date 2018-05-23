@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application>
+	<SchemaModules>
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="8.2.0.4681" />
+		<SchemaModule Name="SystemWindowsFormsModule" Version="8.2.0.4681" IsNewNode="True" />
+	</SchemaModules>
+	<NavigationItems>
+		<Group ID="Default">
+			<Item ID="NewTask" Caption="New Task" ViewID="Task_ListView" IsNewNode="True" />
+		</Group>
+	</NavigationItems>
+</Application>

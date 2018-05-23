@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<Application>
+  <NavigationItems>
+    <Group ID="Default">
+      <Item ID="NewTask" Caption="New Task" ViewID="Task_ListView" IsNewNode="True" />
+    </Group>
+  </NavigationItems>
+</Application>
+
