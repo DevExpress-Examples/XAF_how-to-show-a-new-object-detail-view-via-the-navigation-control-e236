@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign Id="ActionDesign">
+    <ActionToContainerMapping Id="ActionToContainerMapping">
+      <ActionContainer Id="RecordEdit">
+        <ActionLink ActionId="Link" Index="0" />
+        <ActionLink ActionId="Unlink" Index="1" />
+      </ActionContainer>
+    </ActionToContainerMapping>
+  </ActionDesign>
+  <BOModel Id="BOModel">
+    <Class Name="DevExpress.Persistent.BaseImpl.Address" ImageName="BO_Address" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Analysis" ImageName="BO_Analysis" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Country" ImageName="BO_Country" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="Scheduler Event" ImageName="BO_Scheduler">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="StartOn" Caption="Start Date/Time" DisplayFormat="{0:G}" EditMask="G" />
+        <Member Name="EndOn" Caption="End Date/Time" DisplayFormat="{0:G}" EditMask="G" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.HCategory" ImageName="BO_Category" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Note" ImageName="BO_Note" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Organization" ImageName="BO_Organization" />
+    <Class Name="DevExpress.Persistent.BaseImpl.Person" ImageName="BO_Person" />
+    <Class Name="DevExpress.Persistent.BaseImpl.RoleBase" ImageName="BO_Role">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="PersistentPermissions" Caption="Permissions" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Task" ImageName="BO_Task" />
+  </BOModel>
+  <Views Id="Views">
+    <DetailView Id="Address_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Address" Direction="Vertical" ShowCaption="False">
+              <LayoutGroup Id="Address_col1" Removed="True" />
+              <LayoutGroup Id="Address_col2" Removed="True" />
+              <LayoutItem Id="City" IsNewNode="True" />
+              <LayoutItem Id="Country" IsNewNode="True" />
+              <LayoutItem Id="FullAddress" IsNewNode="True" />
+              <LayoutItem Id="Oid" IsNewNode="True" />
+              <LayoutItem Id="StateProvince" IsNewNode="True" />
+              <LayoutItem Id="Street" IsNewNode="True" />
+              <LayoutItem Id="ZipPostal" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Analysis_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PivotChartGroup" Index="100" IsNewNode="True">
+              <LayoutItem Id="Self" IsNewNode="True" ShowCaption="False" Index="1" />
+            </LayoutGroup>
+            <LayoutGroup Id="Analysis">
+              <LayoutItem Id="Name" Index="0" />
+              <LayoutItem Id="DataType" Index="1" />
+              <LayoutItem Id="Criteria" Index="2" IsNewNode="True" />
+              <LayoutItem Id="Self" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Analysis_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Self" PropertyName="Self" Index="-1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="BasicUser_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="BasicUser" Direction="Vertical" ShowCaption="False">
+              <LayoutItem Id="UserName" ShowCaption="True" Index="0" IsNewNode="True" />
+              <LayoutItem Id="FullName" ShowCaption="True" Index="1" IsNewNode="True" />
+              <LayoutItem Id="IsActive" ShowCaption="True" Index="2" IsNewNode="True" />
+              <LayoutItem Id="IsAdministrator" ShowCaption="True" Index="3" IsNewNode="True" />
+              <LayoutGroup Id="BasicUser_col1" Removed="True" />
+              <LayoutGroup Id="BasicUser_col2" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="BasicUser_ListView" AllowEdit="True">
+      <Columns Id="Columns">
+        <ColumnInfo Id="IsActive" PropertyName="IsActive" Index="0" />
+        <ColumnInfo Id="UserName" PropertyName="UserName" Index="1" />
+        <ColumnInfo Id="IsAdministrator" PropertyName="IsAdministrator" Index="2" />
+        <ColumnInfo Id="ChangePasswordOnFirstLogon" PropertyName="ChangePasswordOnFirstLogon" Index="3" ReadOnly="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Event_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="AllDay" PropertyName="AllDay" ImmediatePostData="True" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SubjectGroup" Direction="Vertical" Index="0" IsNewNode="True">
+              <LayoutItem Id="Subject" IsNewNode="True" ShowCaption="True" Index="0" CaptionLocation="Default" />
+              <LayoutItem Id="AllDay" IsNewNode="True" ShowCaption="True" Index="1" CaptionLocation="Default" />
+            </LayoutGroup>
+            <LayoutGroup Id="Event" Index="1">
+              <LayoutGroup Id="Event_col1">
+                <LayoutItem Id="StartOn" Index="0" />
+                <LayoutItem Id="Label" ShowCaption="True" Index="1" CaptionLocation="Default" IsNewNode="True" />
+                <LayoutItem Id="Location" Index="2" />
+                <LayoutItem Id="AllDay" Removed="True" />
+                <LayoutItem Id="EndOn" Removed="True" />
+                <LayoutItem Id="Subject" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Event_col2">
+                <LayoutItem Id="EndOn" ShowCaption="True" Index="0" CaptionLocation="Default" IsNewNode="True" />
+                <LayoutItem Id="Status" Index="1" />
+                <LayoutItem Id="Label" Removed="True" />
+                <LayoutItem Id="RecurrencePattern" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Organization_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="WebSite" PropertyName="WebSite" Index="-1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="PersistentPermission_DetailView">
+      <Layout Id="Layout" Width="954" Height="615">
+        <LayoutGroup Id="Main" CaptionLocation="Default">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PersistentPermission">
+              <LayoutItem Id="Permission" ShowCaption="False" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Person_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Person" Index="0" Direction="Horizontal" ShowCaption="False" Caption="Person" IsNewNode="True">
+            <LayoutGroup Id="Person_col1" IsNewNode="True" Index="0" Direction="Vertical" ShowCaption="False" Caption="Person_col1">
+              <LayoutItem Id="FullName" IsNewNode="True" ShowCaption="True" Index="0" />
+              <LayoutItem Id="FirstName" IsNewNode="True" ShowCaption="True" Index="1" />
+              <LayoutItem Id="MiddleName" IsNewNode="True" ShowCaption="True" Index="2" />
+              <LayoutItem Id="LastName" IsNewNode="True" ShowCaption="True" Index="3" />
+              <LayoutItem Id="DisplayName" IsNewNode="True" ShowCaption="True" Index="4" />
+            </LayoutGroup>
+            <LayoutGroup Id="Person_col2" IsNewNode="True" Index="1" Direction="Vertical" ShowCaption="False" Caption="Person_col2">
+              <LayoutItem Id="Email" IsNewNode="True" ShowCaption="True" Index="1" />
+              <LayoutItem Id="Birthday" IsNewNode="True" ShowCaption="True" Index="2" />
+              <LayoutItem Id="Address1" IsNewNode="True" ShowCaption="True" Index="3" />
+              <LayoutItem Id="Address2" IsNewNode="True" ShowCaption="True" Index="4" />
+            </LayoutGroup>
+            <LayoutItem Id="Photo" IsNewNode="True" ShowCaption="False" Index="2" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="User_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="FullName" PropertyName="FullName" Index="1" />
+        <ColumnInfo Id="Birthday" PropertyName="Birthday" Index="2" />
+        <ColumnInfo Id="Email" PropertyName="Email" Index="4" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

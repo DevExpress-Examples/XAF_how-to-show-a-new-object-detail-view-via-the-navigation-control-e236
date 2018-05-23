@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Application Title="ShowNewObjectExample" Logo="ExpressAppLogo">
+	<NavigationItems NavigationStyle="TreeList">
+		<Item ID="Default">
+			<Item ID="DemoIssue_ListView" Removed="True" />
+		</Item>
+		<Item ID="Issues" Caption="Issues" IsNewNode="True">
+			<Item ID="CreateNewIssue" Caption="Create New..." ViewID="DemoIssue_ListView" ImageName="Attention" IsNewNode="True" />
+			<Item ID="DemoIssue_ListView" ViewID="DemoIssue_ListView" ObjectKey="" Caption="Inbox" IsNewNode="True" />
+		</Item>
+	</NavigationItems>
+</Application>
+
